@@ -10,7 +10,7 @@ class Projects extends Component {
     toggleCategories() {
         if(this.state.activeTab === 0){
             return(
-                <Card shadow={5} style={{minWidth:'450', margin:'auto', top:80}}>
+                <Card shadow={7} style={{minWidth:'450',marginTop:'7%',marginLeft:'auto',marginRight:'auto'}}>
                     <CardTitle style={{height:'250px', background:
                     'url(https://quickdraw.withgoogle.com/static/shareimg.png) center / cover'}}></CardTitle>
                     <CardText>
@@ -29,7 +29,7 @@ class Projects extends Component {
             )
         } else if (this.state.activeTab === 1){
             return(
-                <Card shadow={5} style={{minWidth:'450', margin:'auto', top:80}}>
+                <Card shadow={7} style={{minWidth:'450',marginTop:'7%',marginLeft:'auto',marginRight:'auto'}}>
                     <CardTitle style={{height:'250px', color:'white', background:
                     'url(https://gamertweak.com/wp-content/uploads/2020/05/time-required-to-complete-minecraft-dungeons-1280x720.jpg) center / cover'}}>
                         Dungeon Shortest Path
@@ -48,7 +48,7 @@ class Projects extends Component {
             )
         } else if (this.state.activeTab === 2){
             return(
-                <Card shadow={5} style={{minWidth:'450', margin:'auto', top:80}}>
+                <Card shadow={7} style={{minWidth:'450',marginTop:'7%',marginLeft:'auto',marginRight:'auto'}}>
                     <CardTitle style={{height:'250px', color:'white', background:
                     'url(https://bestfiveindia.files.wordpress.com/2020/01/weather.jpg) center / cover'}}>
                         Weather App
@@ -67,7 +67,7 @@ class Projects extends Component {
             )
         } else if (this.state.activeTab === 3){
             return(
-                <Card shadow={5} style={{minWidth:'450', margin:'auto', top:80}}>
+                <Card shadow={7} style={{minWidth:'450',marginTop:'7%',marginLeft:'auto',marginRight:'auto'}}>
                     <CardTitle style={{height:'250px', color:'white', background:
                     'url(https://res.cloudinary.com/springboard-images/image/upload/q_auto,f_auto,fl_lossy/wordpress/2019/07/sb-blog-what-is-mle.png) center / cover'}}>
                         Weak Supervisied Labeling System
@@ -76,7 +76,9 @@ class Projects extends Component {
                         Help users check the weather forecast.
                     </CardText>
                     <CardActions border>
+                    <a href="https://medium.com/@frankyan1119/astron-a-weak-supervised-labeling-system-intro-6e09c8ccaa4c" rel="noopener noreferrer" target="_blank">
                         <Button colored>Medium Blog</Button>
+                    </a>
                         <Button colored>Github</Button>
                     </CardActions>
                     <CardMenu style={{color:'white'}}>
@@ -92,10 +94,10 @@ class Projects extends Component {
                 <Tabs 
                       activeTab={this.state.activeTab} 
                       onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                    <Tab style={{color:'white',fontSize:'20px',textTransform:'none'}}>Hand Drawing Recognition</Tab>
-                    <Tab style={{color:'white',fontSize:'20px',textTransform:'none'}}>Dungeon Shortest Path</Tab>
-                    <Tab style={{color:'white',fontSize:'20px',textTransform:'none'}}>Check Weather</Tab>
-                    <Tab style={{color:'white',fontSize:'20px',textTransform:'none'}}>Weak Supervised Labeling System</Tab>
+                    <Tab style={{color:'white',textTransform:'none'}}>Hand Drawing Recognition</Tab>
+                    <Tab style={{color:'white',textTransform:'none'}}>Dungeon Shortest Path</Tab>
+                    <Tab style={{color:'white',textTransform:'none'}}>Check Weather</Tab>
+                    <Tab style={{color:'white',textTransform:'none'}}>Weak Supervised Labeling System</Tab>
                 </Tabs>
 
             <section className="projects-grid">

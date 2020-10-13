@@ -5,7 +5,7 @@ import { Grid, Cell } from 'react-mdl';
 class Landing extends Component {
     render() {
         return(
-            <div style={{width:'80%', margin: 'auto'}}>
+            <div>
                 <Grid>
                     <Cell col={12}>
                         <img 
@@ -14,7 +14,7 @@ class Landing extends Component {
                         className='frank-img'
                         />
                     <div className="banner-text">
-                            <h1>Hello, I am Frank Yan.</h1>
+                        <h1>Hello, I am Frank Yan.</h1>
                         <div className="social-links">
                             {/* LinkedIn */}
                             <a href="https://linkedin.com/in/frankyan1119" rel="noopener noreferrer" target="_blank">

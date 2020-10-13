@@ -7,10 +7,10 @@ class Contact extends Component {
             <div className="contact-body">
                 <Grid className="contact-grid">
                     <Cell col={6} style={{color:'white'}}>
-                        <h2>Contact Me</h2>
+                        <h4>Contact Me</h4>
                         <div className="contact-list">
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        yahao_yan@outlook.com
+                        <p>yahao_yan @ outlook.com</p>
                         </div>
                     </Cell>
                 </Grid>
