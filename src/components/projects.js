@@ -31,25 +31,6 @@ class Projects extends Component {
             return(
                 <Card shadow={7} style={{minWidth:'450',marginTop:'7%',marginLeft:'auto',marginRight:'auto'}}>
                     <CardTitle style={{height:'250px', color:'white', background:
-                    'url(https://gamertweak.com/wp-content/uploads/2020/05/time-required-to-complete-minecraft-dungeons-1280x720.jpg) center / cover'}}>
-                        Dungeon Shortest Path
-                    </CardTitle>
-                    <CardText>
-                        Allow players to design a 2D dungeon map and finds the shortest way out.
-                    </CardText>
-                    <CardActions border>
-                        <Button colored>Play</Button>
-                        <Button colored>Github</Button>
-                    </CardActions>
-                    <CardMenu style={{color:'white'}}>
-                        <IconButton name='share'/>
-                    </CardMenu>
-                </Card>
-            )
-        } else if (this.state.activeTab === 2){
-            return(
-                <Card shadow={7} style={{minWidth:'450',marginTop:'7%',marginLeft:'auto',marginRight:'auto'}}>
-                    <CardTitle style={{height:'250px', color:'white', background:
                     'url(https://bestfiveindia.files.wordpress.com/2020/01/weather.jpg) center / cover'}}>
                         Weather App
                     </CardTitle>
@@ -65,7 +46,7 @@ class Projects extends Component {
                     </CardMenu>
                 </Card>
             )
-        } else if (this.state.activeTab === 3){
+        } else if (this.state.activeTab === 2){
             return(
                 <Card shadow={7} style={{minWidth:'450',marginTop:'7%',marginLeft:'auto',marginRight:'auto'}}>
                     <CardTitle style={{height:'250px', color:'white', background:
@@ -95,7 +76,6 @@ class Projects extends Component {
                       activeTab={this.state.activeTab} 
                       onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
                     <Tab style={{color:'white',textTransform:'none'}}>Hand Drawing Recognition</Tab>
-                    <Tab style={{color:'white',textTransform:'none'}}>Dungeon Shortest Path</Tab>
                     <Tab style={{color:'white',textTransform:'none'}}>Check Weather</Tab>
                     <Tab style={{color:'white',textTransform:'none'}}>Weak Supervised Labeling System</Tab>
                 </Tabs>
